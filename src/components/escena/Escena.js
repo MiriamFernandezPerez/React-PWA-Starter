@@ -1,10 +1,17 @@
 import React from "react";
-import {Marco} from './styled';
+import {MarcoStyle, BotonStyle} from './styled';
 
 export const Escena = (props) => {
-  return (
-  <p>
-    <Marco>{props.text}</Marco>
-  </p>
-  );
+    return (
+    <p>
+       <MarcoStyle className={props.estado}>{props.text}</MarcoStyle>
+    </p>
+    );
 };
+
+export const Botones = (props) => {
+    return (
+        <BotonStyle>{props.textBtn}</BotonStyle>
+    );
+};
+
