@@ -1,9 +1,10 @@
 import React from "react";
+import {Marco} from './styled';
 
 export const Escena = (props) => {
   return (
   <p>
-    {props.text}
+    <Marco>{props.text}</Marco>
   </p>
   );
 };
