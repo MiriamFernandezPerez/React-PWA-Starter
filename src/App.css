@@ -4,6 +4,31 @@ body{
   border: 0;
 }
 
+.home{
+  font-family: 'Russo One', sans-serif;
+  background-image: url('/src/img/fondo-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: rgb(51, 7, 170);
+}
+
+h1, h3{
+  margin-top: 5rem;
+  background-color: rgb(230, 230, 238);
+  border-radius: 1rem;
+  opacity: 0.8;
+  padding: 1rem;
+  margin: 4rem;
+  display: inline-block;
+}
+
+h3{
+  margin: 0 20%;
+  margin-bottom: 5%;
+}
+
 .App {
   text-align: center;
 }
