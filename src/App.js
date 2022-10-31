@@ -2,6 +2,7 @@ import './App.css';
 import {Escena, Botones} from './components/escena/Escena';
 import {Story} from './data/Story';
 import {useState} from 'react';
+import {GlobalStyle} from './globalStyles';
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
   const Entrar = () =>{
     setBienvenida(Bienvenida === true? Bienvenida = false : Bienvenida = true);
   }
-  
+
   return (
     
     <div className="App">
@@ -53,6 +54,7 @@ function App() {
     {!Bienvenida &&
     <div>
       <div>
+      <GlobalStyle img={Story[contador].img}></GlobalStyle>
         <span onClick={Retroceso}><Botones textBtn="Anterior"></Botones></span>
         <span onClick={Avance}><Botones textBtn="Següent"></Botones></span>
       </div>
@@ -70,3 +72,6 @@ function App() {
 }
 
 export default App;
+
+
+

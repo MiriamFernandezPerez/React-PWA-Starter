@@ -1,6 +1,7 @@
 import React from "react";
 import {MarcoStyle, BotonStyle} from './styled';
 
+
 export const Escena = (props) => {
     return (
     <p>
