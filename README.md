@@ -43,4 +43,80 @@ La aplicación sigue el flujo estándar de CRA:
 | Monitoreo del rendimiento      | web-vitals                       | 2.1.4   | Métricas de rendimiento web                   |
 
 ## Estructura del proyecto
+public/ # Archivos estáticos y PWA
+index.html # Plantilla HTML con punto de montaje raíz
+manifest.json # Metadatos de PWA
+favicon.ico # Icono de la pestaña del navegador
+logo192.png # Icono de PWA (192×192)
+logo512.png # Icono de PWA (512×512)
+robots.txt # Directivas para rastreadores web
+
+src/ # Código fuente procesado por Webpack
+index.js # Punto de entrada de la aplicación
+App.js # Componente raíz
+App.css # Estilos específicos del componente
+index.css # Estilos globales
+reportWebVitals.js # Monitoreo del rendimiento
+setupTests.js # Configuración de Jest
+
+package.json # Dependencias y scripts
+package-lock.json # Árbol de versiones exacto
+.gitignore # Archivos ignorados por Git
+
+## Primeros pasos
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/MiriamFernandezPerez/sprint6-React-I.git
+cd sprint6-React-I
+```
+
+2. Instalar dependencias:
+```bash
+npm install
+```
+
+3. Ejecutar en modo desarrollo:
+```bash
+npm start
+```
+
+El servidor se iniciará en [http://localhost:3000](http://localhost:3000) con recarga en caliente.
+
+## Scripts disponibles
+
+| Script               | Comando                  | Descripción                                   |
+|----------------------|-------------------------|-----------------------------------------------|
+| Iniciar desarrollo   | `npm start`             | Servidor de desarrollo con recarga en caliente|
+| Construir producción | `npm run build`         | Compilación optimizada para producción       |
+| Ejecutar pruebas     | `npm test`              | Ejecuta Jest en modo observación             |
+| Eject                | `npm run eject`         | Exponer configuración de Webpack/Babel       |
+
+## PWA
+
+El proyecto incluye infraestructura PWA:
+
+- Instalación en la pantalla de inicio del dispositivo.
+- Experiencia de aplicación independiente (sin navegador).
+- Iconos adaptativos y pantalla de presentación configurable.
+- Personalización del color del tema.
+
+La configuración se encuentra en `public/manifest.json` y se referencia en `public/index.html`.
+
+## Compatibilidad del navegador
+
+- **Producción:** Navegadores con >0.2% de uso global, excluyendo Opera Mini.
+- **Desarrollo:** Últimas versiones de Chrome, Firefox y Safari.
+
+## Pruebas
+
+Configuradas con **Jest** y **react-testing-library**:
+
+- `App.test.js` contiene pruebas del componente raíz.
+- `setupTests.js` prepara el entorno de pruebas.
+
+## Monitoreo del rendimiento
+
+Se utiliza `reportWebVitals.js` para medir métricas de rendimiento web importantes. Los resultados pueden enviarse a un endpoint de analítica si se desea.
 
