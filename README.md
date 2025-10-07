@@ -13,7 +13,6 @@ Una aplicación React creada con **Create React App (CRA)**, que incluye soporte
 - [🌍 Compatibilidad del navegador](#compatibilidad-del-navegador)
 - [🧪 Pruebas](#pruebas)
 - [📊 Monitoreo del rendimiento](#monitoreo-del-rendimiento)
-- [📜 Licencia](#licencia)
 
 ## 📝 Descripción
 
